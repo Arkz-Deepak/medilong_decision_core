@@ -1,6 +1,6 @@
 """
 src/decision_core.py - Project MediLong: Unified Decision Core Service
-Author: Deepak (Arkz-Deepak) — ML Fusion & Clinical Safety Squad Lead
+Author: Deepak (Arkz-Deepak) — ML Fusion & Clinical Safety Squad (ML Engineer)
 Copyright (c) 2026 Deepak (Arkz-Deepak). All rights reserved.
 Licensed under the MIT License.
 

@@ -315,7 +315,7 @@ python src/train.py
 ---
 
 ## 👥 Authors & Team Contributions
-* **Deepak (Arkz-Deepak)** — *ML Fusion & Clinical Safety Squad Lead*
+* **Deepak (Arkz-Deepak)** — *ML Fusion & Clinical Safety Squad (ML Engineer)*
 * **Manoj & Nambi** — *ML Modeling & Guardrail Research*
 * In collaboration with:
   * **Backend & Cloud Squad**: Sridhar, Murasoli, Kamalesh G
