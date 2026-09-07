@@ -120,6 +120,14 @@ class TestDecisionCoreServiceIntegration(unittest.TestCase):
         directions = {item.impact_direction for item in res.waterfall_items}
         self.assertTrue("increases_risk" in directions or "decreases_risk" in directions)
 
+    def test_engine_build_signature(self):
+        """Engine build and telemetry signature must be embedded in metadata"""
+        payload = UnifiedIntakeRequest()
+        res = self.service.evaluate(payload)
+        self.assertIn("engine_build", res.metadata)
+        self.assertTrue(res.metadata["engine_build"].startswith("arkz-"))
+        self.assertIn("engine_id", res.metadata)
+
 
 if __name__ == "__main__":
     unittest.main()

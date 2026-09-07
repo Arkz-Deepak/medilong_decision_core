@@ -315,9 +315,17 @@ python src/train.py
 ---
 
 ## 👥 Authors & Team Contributions
-* **Deepak** — *ML Fusion & Clinical Safety Squad Lead*
+* **Deepak (Arkz-Deepak)** — *ML Fusion & Clinical Safety Squad Lead*
 * **Manoj & Nambi** — *ML Modeling & Guardrail Research*
 * In collaboration with:
   * **Backend & Cloud Squad**: Sridhar, Murasoli, Kamalesh G
   * **Data Pipelines Squad**: Mani, Keerthi, Kamalesh C
   * **Frontend & UI/UX Squad**: Maadhesh, Sanjeevram, Adithyan, Kishore
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.  
+Copyright (c) 2026 Deepak (Arkz-Deepak). All rights reserved.
+

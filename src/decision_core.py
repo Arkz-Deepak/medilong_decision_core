@@ -1,6 +1,8 @@
 """
 src/decision_core.py - Project MediLong: Unified Decision Core Service
-Author: Deepak (ML Fusion & Clinical Safety Squad)
+Author: Deepak (Arkz-Deepak) — ML Fusion & Clinical Safety Squad Lead
+Copyright (c) 2026 Deepak (Arkz-Deepak). All rights reserved.
+Licensed under the MIT License.
 
 This module implements the complete Decision Core contract slice for Project MediLong.
 It is built to integrate seamlessly with:
@@ -15,6 +17,7 @@ Contract Slice Owned:
 import os
 import json
 import time
+import hashlib
 import joblib
 import numpy as np
 import pandas as pd
@@ -24,6 +27,13 @@ from pydantic import BaseModel, Field
 import shap
 from sklearn.calibration import CalibratedClassifierCV
 from xgboost import XGBClassifier
+
+# Authorship provenance and engine build telemetry signature
+__author__ = "Deepak (Arkz-Deepak)"
+__copyright__ = "Copyright (c) 2026 Deepak (Arkz-Deepak)"
+__license__ = "MIT"
+__engine_signature__ = "arkz-ml-decision-v1.0.4-8f2c7a"
+__engine_id__ = f"arkz-core-{hashlib.sha256(b'Arkz-Deepak-ML-Fusion-MediLong').hexdigest()[:12]}"
 
 
 # Directory setup
@@ -509,6 +519,8 @@ class DecisionCoreService:
                 "cv_folds": 5,
                 "pillar_2_stub_mode": is_stub_mode,
                 "contract_version": "1.0.0",
+                "engine_build": __engine_signature__,
+                "engine_id": __engine_id__,
                 "squad": "ML Fusion & Clinical Safety"
             }
         )

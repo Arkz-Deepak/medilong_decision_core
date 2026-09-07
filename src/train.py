@@ -1,21 +1,11 @@
 """
 src/train.py - Project MediLong: ML Fusion & Clinical Safety Squad
-Author: Deepak (ML Fusion Squad)
+Author: Deepak (Arkz-Deepak) — ML Fusion & Clinical Safety Squad Lead
+Copyright (c) 2026 Deepak (Arkz-Deepak). All rights reserved.
+Licensed under the MIT License.
 
 This script translates the exploratory notebook (notebooks/0_eda.ipynb) into a modular,
 production-grade training and evaluation pipeline for the MediLong Decision Core.
-
-Pipeline Steps:
-1. Load dataset (PCOS_data_without_infertility.xlsx).
-2. Clean column headers and remove non-predictive identifiers.
-3. Coerce problematic numeric types (AMH, beta-HCG).
-4. Impute missing values with median baselines and persist feature medians.
-5. Stratified train-test split (80/20).
-6. Train baseline XGBoost classifier.
-7. Calibrate probabilities using CalibratedClassifierCV (Isotonic Regression, cv=5).
-8. Generate evaluation metrics (Classification Report, ROC-AUC).
-9. Fit SHAP TreeExplainer for local feature attributions.
-10. Persist model artifacts and configuration for downstream inference integration.
 """
 
 import os
